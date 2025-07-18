@@ -29,6 +29,6 @@ try:
         mycursor.close()
         mydb.close()
     
-except Error as err:
+except mysql.connector.Error as err:
     print(f"Error connecting to Mysql: {err}")
 
