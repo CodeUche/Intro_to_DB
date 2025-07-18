@@ -18,7 +18,7 @@ try:
         mycursor = mydb.cursor()
         db_name = "alx_book_store"
 
-        mycursor.execute(f"CREATE DATABASE IF NOT EXISTS {db_name}")
+        mycursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
 
         if mycursor.statement.startswith("CREATE DATABASE") and mycursor.rowcount == -1:
             print(f"Database '{db_name}' already exists.")
